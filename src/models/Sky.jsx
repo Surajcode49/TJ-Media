@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import { useGLTF } from "@react-three/drei";
 
-import skyScene from "../assets/3d/sky.glb";
+import skyScene from "../assets/3d/skycvbnm.glb";
 
 export function Sky() {
   const sky = useGLTF(skyScene);
@@ -12,7 +12,8 @@ export function Sky() {
 
     const animate = () => {
       // Rotate the sky continuously
-      skyRef.current.rotation.y += 0.007;
+      skyRef.current.rotation.z -= 0.01; // Adjust speed as needed
+
       animationId = requestAnimationFrame(animate);
     };
 
