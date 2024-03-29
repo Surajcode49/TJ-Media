@@ -12,7 +12,7 @@ export function Sky() {
 
     const animate = () => {
       // Rotate the sky continuously
-      skyRef.current.rotation.z -= 0.01; // Adjust speed as needed
+      skyRef.current.rotation.z -= 0.05; // Adjust speed as needed
 
       animationId = requestAnimationFrame(animate);
     };
