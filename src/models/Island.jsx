@@ -24,6 +24,9 @@ export function Island({ isRotating, setIsRotating, setCurrentStage, ...props })
     lastX.current = clientX;
   };
 
+
+  
+
   const handlePointerUp = (event) => {
     event.stopPropagation();
     event.preventDefault();
